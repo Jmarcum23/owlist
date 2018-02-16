@@ -57,12 +57,23 @@ a:hover {
 	color: #14c3f4;
 }
 
+a.purple-link {
+	color: #605ca9;
+}
+
+a.purple-link:hover {
+	color: #14c3f4;
+}
+
 h1, h2, h3, h4, h5 {
 	font-weight: bold;
 }
 
 .dk-blue-header {
 	color: #141b26;
+}
+.grey-header {
+	color: #bcbec0;
 }
 
 .section-header {
@@ -78,6 +89,9 @@ h1, h2, h3, h4, h5 {
 .btn-primary:hover {
 	background: #34348c;
 	border: none;
+}
+.btn-primary:active {
+	background: #34348c !important;
 }
 
 .btn-primary.full-width {
@@ -133,6 +147,10 @@ a.nav-link {
 	border-bottom: 1px solid #bcbec0;
 }
 
+#top-nav-bar .navbar {
+	padding: 0;
+}
+
 #task-bar {
 	background: #fff;
 	height: auto;
@@ -183,6 +201,19 @@ ul#task-nav li a.active {
 
 ul#task-nav li a, ul#top-nav-left li a, ul#top-nav-right li a {
 	text-decoration: none;
+}
+
+.navbar-toggler {
+	margin: 0.25rem;
+}
+
+.dropdown-menu-right {
+right: 0;
+left: auto;
+}
+
+.dropdown-item:active {
+	background-color: #14c3f4;
 }
 
 /*----------- LOGIN SPLASH PAGE ----------*/
@@ -252,15 +283,15 @@ p#signup a {
 
 /* ----------------- MODALS -------------------*/
 
-#signup-modal .modal-header, #add-task-modal .modal-header {
+#signup-modal .modal-header, #add-task-modal .modal-header, #profile-modal .modal-header {
 	border-bottom: none;
 }
 
-#signup-modal .modal-body, #signup-modal .modal-footer {
+#signup-modal .modal-body, #signup-modal .modal-footer  {
 	padding: 1rem 4rem 2rem 4rem;
 }
 
-#signup-modal .modal-footer, #add-task-modal .modal-footer {
+#signup-modal .modal-footer, #add-task-modal .modal-footer, #profile-modal .modal-footer {
 	border-top: none;
 }
 
@@ -291,6 +322,7 @@ ul.modal-list li:first-child {
 	margin: 3%;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
 	height: 100vh;
+	overflow: scroll;
 }
 
 #add-task {
@@ -339,12 +371,17 @@ footer {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
+	#side-nav {
+		display: none;
+	}
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
-
+	#side-nav {
+		display: none;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */

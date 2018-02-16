@@ -8,7 +8,7 @@ import Content from './d-content';
 const MainContent = (props) => {
 
 	return(
-		<div class="col-sm-10 col-md-10 col-lg-10">
+		<div className="col-sm-12 col-md-10 col-lg-10">
 			<TopNav />
 			<TaskBar />
 			<Content />
