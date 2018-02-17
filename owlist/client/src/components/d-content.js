@@ -13,7 +13,7 @@ const Content = (props) => {
 			{/*Need to setup so that only contentleft shows until a li item is clicked then 
 			contentright will show, conditional rendering*/}
 			<ContentLeft />
-			{/*<ContentRight />*/}
+			<ContentRight />
 		</div>
 	);
 };

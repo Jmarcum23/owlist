@@ -42,7 +42,7 @@ const TopNav = (props) => {
 			<ul id="top-nav-right" className="my-2 my-lg-0">
 
 				{/*Below link just needs to display logged in username*/}
-				<li><a href="">User Name</a></li>
+				<li>User Name Here</li>
 
 				{/*Need to setup modal for link below*/}
 				<li className="dropdown">

@@ -26,6 +26,16 @@ body, html {
     background: #e6e7e8
 }
 
+.navbar-brand {
+	background: url(./images/owlist-logo.png);
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 24px;
+	margin-top: 22px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
 #index-header {
 	background: #14c3f4;
     background: webkit-linear-gradient(legacy-direction(270deg),#14c3f4, #605ca9);
@@ -88,9 +98,24 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 	margin-top: 10px;
 }
+/*----------- INDEX NAV --------------*/
 
+.nav-white {
+	background: #fff;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+}
 
-/*----------- DASHBOARD SIDE NAV ---------------*/
+header {
+	padding-top: 60px;
+}
+
+header h1 {
+	font-size: 5.5rem;
+	color: #fff;
+	font-weight: normal;
+}
+
+/*----------- SIDE NAV ---------------*/
 
 
 #side-nav {
@@ -98,28 +123,23 @@ h1, h2, h3, h4, h5 {
 	height: 100vh;;
 }
 
-h6.projects {
-	padding-bottom: 7px;
+ul.nav {
+	width: 100%;
+}
+
+li.nav-item a {
+	color: #bcbec0;
+}
+
+li.nav-item:first-child {
 	border-bottom: 1px solid #bcbec0;
 }
 
-ul.projects-list {
-	list-style: none;
-	padding:0;
+a.nav-link {
+	padding-left: 0;
 }
 
-ul.projects-list li a {
-	color: #bcbec0;
-	text-decoration: none;
-}
-
-ul.projects-list li a:hover {
-	color: #14c3f4;
-	text-decoration: none;
-}
-
-
-/*----------- DASHBOARD TOP NAV BAR ---------------*/
+/*----------- TOP NAV BAR ---------------*/
 
 #top-nav-bar {
 	background: #fff;
@@ -196,145 +216,6 @@ left: auto;
 	background-color: #14c3f4;
 }
 
-#navbarSupportedContent {
-	background: #fff;
-	z-index: 100;
-}
-
-/* ----------------- MODALS -------------------*/
-
-#signup-modal .modal-header, #add-task-modal .modal-header, #profile-modal .modal-header {
-	border-bottom: none;
-}
-
-#signup-modal .modal-body, #signup-modal .modal-footer  {
-	padding: 1rem 4rem 2rem 4rem;
-}
-
-#signup-modal .modal-footer, #add-task-modal .modal-footer, #profile-modal .modal-footer {
-	border-top: none;
-}
-
-#add-task-modal .modal-body, #add-task-modal .modal-footer {
-	padding: 0 2rem 2rem 2rem;
-}
-
-ul.modal-list {
-	padding: 0;
-}
-
-ul.modal-list li {
-	list-style: none;
-	width: 49%;
-	float: left;
-}
-
-ul.modal-list li:first-child {
-	margin-right: 8px;
-}
-
-
-/*----------- MAIN DASHBOARD CONTENT ---------------*/
-
-#main-content-left, #main-content-right {
-	background: #fff;
-	border-radius: 5px;
-	margin: 3%;
-	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
-	height: 100vh;
-	overflow: scroll;
-	overflow-x: hidden;
-}
-
-.navbar-brand {
-	background: url(./images/owlist-logo.png);
-	background-repeat: no-repeat;
-	width: 100px;
-	height: 24px;
-	margin-bottom: 10px;
-}
-
-#add-task {
-	border-bottom: 1px solid #bcbec0;
-	height: auto;
-}
-
-ul#task-list, ul#notifications-list {
-	margin-left: 0;
-	padding: 1rem;
-}
-
-ul#task-list li, ul#notifications-list li {
-	list-style-type: none;
-	border-bottom: 1px solid #ccc;
-	padding: 0.25rem 0;
-}
-
-ul#task-details {
-	margin-bottom: 0;
-	padding: 0.65rem;
-	display: inline-block;
-}
-
-ul#task-details li {
-	list-style: none;
-	padding: 0.25rem 0.25rem;
-	display: inline-block;
-}
-
-.task-date.form-control {
-	display: inline;
-	width: 175px;
-	margin-left:10px;
-}
-
-.file-chooser { 
-	position: relative; 
-	margin: 0;
-}
-
-.file-chooser:hover {
-	cursor: pointer;
-}
-
-.chooser { 
-	position: absolute; 
-	z-index: 1; 
-	opacity: 0; 
-	cursor: pointer;
-}
-
-#task-pane {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	margin:0;
-}
-
-.task-details-content {
-	height: 413px;
-	overflow: scroll;
-}
-
-.comment-section {
-	position: fixed;
-	height: auto;
-	background-color: #fff;
-	border-top: 1px solid #bcbec0;	
-	width: calc(91.75% * 0.4);
-	bottom: 0;
-}
-
-.task-date::before { 
-	content: attr(data-placeholder);
-	width: 100%;
-}
-
-.task-date:focus::before,
-.task-date:valid::before { 
-	display: none 
-}
-
 /*----------- LOGIN SPLASH PAGE ----------*/
 
 #splash-page-container {
@@ -399,24 +280,112 @@ p#signup a {
 	font-weight: bold;
 }
 
-/*----------- INDEX NAV --------------*/
 
-.nav-white {
+/* ----------------- MODALS -------------------*/
+
+#signup-modal .modal-header, #add-task-modal .modal-header, #profile-modal .modal-header {
+	border-bottom: none;
+}
+
+#signup-modal .modal-body, #signup-modal .modal-footer  {
+	padding: 1rem 4rem 2rem 4rem;
+}
+
+#signup-modal .modal-footer, #add-task-modal .modal-footer, #profile-modal .modal-footer {
+	border-top: none;
+}
+
+#add-task-modal .modal-body, #add-task-modal .modal-footer {
+	padding: 0 2rem 2rem 2rem;
+}
+
+ul.modal-list {
+	padding: 0;
+}
+
+ul.modal-list li {
+	list-style: none;
+	width: 49%;
+	float: left;
+}
+
+ul.modal-list li:first-child {
+	margin-right: 8px;
+}
+
+
+/*----------- MAIN DASHBOARD CONTENT ---------------*/
+
+#main-content-left, #main-content-right {
 	background: #fff;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	border-radius: 5px;
+	margin: 3%;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	height: 100vh;
+	overflow: scroll;
 }
 
-header {
-	padding-top: 60px;
+#main-content-right {
+	position: relative;
 }
 
-header h1 {
-	font-size: 5.5rem;
-	color: #fff;
-	font-weight: normal;
+#add-task {
+	border-bottom: 1px solid #bcbec0;
+	height: auto;
 }
 
+ul#task-list {
+	margin-left: 0;
+	padding: 1rem;
+}
 
+ul#task-list li {
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding: 0.25rem 0;
+}
+
+ul#task-details {
+	margin-bottom: 0;
+	padding: 0.65rem;
+	display: inline-block;
+}
+
+ul#task-details li {
+	list-style: none;
+	padding: 0.25rem 0.25rem;
+	display: inline-block;
+}
+
+.task-date.form-control {
+	display: inline;
+	width: 175px;
+	margin-left:10px;
+}
+
+.file-chooser { 
+	position: relative; 
+	margin: 0;
+}
+
+.file-chooser:hover {
+	cursor: pointer;
+}
+
+.chooser { 
+	position: absolute; 
+	z-index: 1; 
+	opacity: 0; 
+	cursor: pointer;
+}
+
+.comment-section {
+	display: block;
+	height: 100px;
+	background-color: #ddd;
+	width: 100%;
+	bottom: 0;
+}
 /*---------------- INDEX FOOTER ---------------------*/
 
 footer {
@@ -450,31 +419,6 @@ footer {
 	#side-nav {
 		display: none;
 	}
-	ul#top-nav-left li, ul#top-nav-right li {
-		display: block;
-	}
-
-	ul#top-nav-right {
-		float:left;
-	}
-	#whole-page-container {
-		overflow-y: auto;
-	}
-	#main-content-left.col, #main-conent-right.col {
-		flex-basis: 100%;
-	}
-	#main-content-left, #main-content-right {
-	width: 100% !important;
-	height: auto;
-	}
-	#main-content-right {
-		margin-bottom: 1rem;
-		overflow-x: hidden;
-	}
-	.comment-section {
-	position: static;
-	width: 100%;
-	}
 
 }
 
@@ -483,29 +427,11 @@ footer {
 	#side-nav {
 		display: none;
 	}
-	#whole-page-container {
-		overflow-y: auto;
-	}
-	#main-content-left.col, #main-conent-right.col {
-		flex-basis: 100%;
-	}
-	#main-content-left, #main-content-right{
-	width: 100% !important;
-	height: auto;
-	}
-	#main-content-right {
-		margin-bottom: 1rem;
-		overflow-x: hidden;
-	}
-	.comment-section {
-	position: static;
-	width: 100%;
-	}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) { 
-
+  
 }
 
 /* Large devices (desktops, 992px and up) */

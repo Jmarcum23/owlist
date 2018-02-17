@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const TaksListItem = (props) => {
+const TaskListItem = (props) => {
 
 	return(
 		<li>
@@ -11,11 +11,11 @@ const TaksListItem = (props) => {
 
 		{/*Also need to add completed checkbox to left of each li item*/}
 		<a href="">Task Example 1</a>
-		</li>	
+		</li>
 	);
 };
 
 
 
 
-export default TaksListItem;
+export default TaskListItem;
