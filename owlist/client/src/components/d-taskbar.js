@@ -4,7 +4,7 @@ const TaskBar = (props) => {
 
 	return(
 		<section id="task-bar">
-			{/*Need to setup this h3 below to bring in current project name that user is viewing*/}
+			{/*Need to setup this h3 below to bring in current project name that user is viewing, if no projects default to "My Personal Tasks" */}
 			<h3 className="dk-blue-header section-header pt-3">Project Name Here</h3>
 			<ul id="task-nav">
 				{/*My Tasks li needs to display contentleft/TaskList*/}

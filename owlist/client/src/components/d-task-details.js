@@ -10,11 +10,13 @@ const TaskDetails = (props) => {
 		<div id="task-pane">
 		<div id="add-task">
 			<ul id="task-details">
+				{/*Pull in username/display name that task is assigned to here*/}
 				<li>User Name Here</li>
 
 				<li className="">
 				<CalendarIcon size={23} color={'#605ca9'}/><input type="date" className="task-date form-control" name="dueDate2" data-placeholder="Due Date" required aria-required="true" />
 				</li>
+				
 				<li className="file-chooser">
 	                <input type="file" className="form-control-file chooser" id="addAttachment2" />
 	                <a href="#"><PaperclipIcon size={23} color={'#605ca9'}/></a>
@@ -29,6 +31,8 @@ const TaskDetails = (props) => {
 			{/*Break out below into component */}
 			<p>Project Details here</p>
 			<hr />
+
+			{/*Break out below into component */}
 			<p>Project attachments here</p>
 			<hr />
 
@@ -40,6 +44,7 @@ const TaskDetails = (props) => {
 
 		</div>
 		<div className="comment-section p-3">
+			{/*Break out below into component */}
 			<form>
 			<textarea className="form-control" id="taskDescriptionTextarea2" placeholder="Write a comment..." rows="3"></textarea>
 			 <button type="submit" className="btn btn-primary full-width">Submit</button>

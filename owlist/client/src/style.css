@@ -203,19 +203,20 @@ left: auto;
 
 /* ----------------- MODALS -------------------*/
 
-#signup-modal .modal-header, #add-task-modal .modal-header, #profile-modal .modal-header {
+.modal-header {
 	border-bottom: none;
+}
+
+.modal-footer {
+	border-top: none;
 }
 
 #signup-modal .modal-body, #signup-modal .modal-footer  {
 	padding: 1rem 4rem 2rem 4rem;
 }
 
-#signup-modal .modal-footer, #add-task-modal .modal-footer, #profile-modal .modal-footer {
-	border-top: none;
-}
-
-#add-task-modal .modal-body, #add-task-modal .modal-footer {
+#add-task-modal .modal-body, #add-task-modal .modal-footer, #new-project-modal .modal-body, #new-project-modal .modal-footer,
+#profile-modal .modal-body, #profile-modal .modal-footer {
 	padding: 0 2rem 2rem 2rem;
 }
 

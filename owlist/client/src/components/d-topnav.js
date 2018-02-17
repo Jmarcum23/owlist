@@ -44,7 +44,6 @@ const TopNav = (props) => {
 				{/*Below link just needs to display logged in username*/}
 				<li>User Name Here</li>
 
-				{/*Need to setup modal for link below*/}
 				<li className="dropdown">
 				<a className="purple-link" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<UserIcon size={23}/>
