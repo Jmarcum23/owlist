@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectList from './d-project-list'
 
 
 const SideBar = (props) => {
@@ -9,11 +10,7 @@ const SideBar = (props) => {
 			<div className="navbar-brand">
 			</div>
 			<h6 className="grey-header projects pt-5">Projects</h6>
-			    	<ul className="projects-list">
-						<li>
-							<a href="">Projects list here</a>
-						</li>
-					</ul>
+			<ProjectList />
 		</div>
 		
 	);
