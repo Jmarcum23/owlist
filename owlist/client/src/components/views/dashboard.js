@@ -9,6 +9,7 @@ render() {
 		<div className='row no-gutters'> 
 		<SideBar /> 
 		<MainContent />
+		{this.props.children}
 		</div>
       </div>
     );

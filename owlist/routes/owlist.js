@@ -4,7 +4,7 @@ var mongojs = require('mongojs');
 var db = mongojs('mongodb://localhost:27017/owlist', ['projectnames']);
 
 // Get All projectnames
-router.get('/', function(req, res, next){
+router.get('/projectnames', function(req, res, next){
     db.projectnames.find(function(err, projectnames){
         if(err){
             res.send(err);

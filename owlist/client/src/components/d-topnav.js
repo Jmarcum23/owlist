@@ -2,6 +2,9 @@ import React from "react";
 import PlusSign from 'react-icons/lib/fa/plus-circle';
 import UserIcon from 'react-icons/lib/fa/user';
 
+import {
+  Link,
+} from 'react-router-dom'
 
 
 
@@ -15,12 +18,12 @@ const TopNav = (props) => {
   			</button>
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul id="top-nav-left" className="navbar-nav mr-auto">
-				<li><a href="">My Tasks</a></li>
-				<li><a href="">Notifications</a></li>
+				<li><Link to="">My Tasks</Link></li>
+				<li><Link to="">Notifications</Link></li>
 
 				{/*Need to add components to Projects dropdown and modal to new project*/}
 				<li className="dropdown">
-				<a className="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				Projects
 				</a>
 				<div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -61,8 +64,5 @@ const TopNav = (props) => {
 		</section>
 	);
 };
-
-
-
 
 export default TopNav;

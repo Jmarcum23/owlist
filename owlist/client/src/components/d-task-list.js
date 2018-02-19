@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from 'react';
 import TaskListItem from './d-task-list-item';
 import NoTaskImg from '../images/no-tasks-img.png';
 
 
-const TaskList = (props) => {
+class TaskList extends Component {
+  render() {
 
 	return(
 		<div>
@@ -23,6 +24,7 @@ const TaskList = (props) => {
 		</div>
 	);
 };
+}
 
 
 
