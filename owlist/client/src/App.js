@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
 
-
-
 import {
   Route,
 } from 'react-router-dom'
@@ -10,7 +8,6 @@ import {
 import Home from './components/views/home';
 import Dashboard from './components/views/dashboard';
 import Login from './components/views/login';
-
 
 
 class App extends Component {
