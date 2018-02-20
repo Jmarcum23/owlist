@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 
 
+
 import {
   Route,
 } from 'react-router-dom'
@@ -9,14 +10,15 @@ import {
 import Home from './components/views/home';
 import Dashboard from './components/views/dashboard';
 import Login from './components/views/login';
-import ContentLeft from './components/d-content-left';
+
+
 
 class App extends Component {
   render() {
     return (
          <div id="whole-page-container" className="wrapper">
           <Route exact path="/" component={Home}/>
-          <Route exact path="/dashboard" component={Dashboard} />
+          <Route path="/dashboard" component={Dashboard} />
           <Route exact path="/login" component={Login}/>
         </div>
     );

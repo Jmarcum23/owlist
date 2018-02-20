@@ -9,7 +9,7 @@ const NotificationsList = (props) => {
 		<div>
 
 		{/*If no items in task list show this:*/}
-		<h3 className="grey-header section-header pt-5">Go ahead, add a task. It will be a hoot!</h3>
+		<h3 className="grey-header section-header pt-5">No notifications here. You are owl up to date!</h3>
 		<img className="d-block mr-auto ml-auto mt-5 p-2 img-fluid" src={NoTaskImg} alt='blah' width={470}/>
 
 		{/*Else, show this:*/}
