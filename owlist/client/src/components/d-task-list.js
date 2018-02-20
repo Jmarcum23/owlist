@@ -11,7 +11,7 @@ class TaskList extends Component {
 
   showTasks =
     	() => {
-      	if (this.state.taskitems.length == 0) {
+      	if (this.state.taskitems.length === 0) {
         return <div>
         {/*If no items in task list show this:*/}
 		<h3 className="grey-header section-header pt-5">Go ahead, add a task. It will be a hoot!</h3>

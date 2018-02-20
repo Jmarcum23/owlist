@@ -87,7 +87,7 @@ ReactDOM.render(
 		      	  <h3 className="modal-title mb-4">Create An Account</h3>
 			      <SignupForm />
 		      </div>
-		      <div class="modal-footer">
+		      <div className="modal-footer">
 		      </div>
 		    </div>
 		  </div>

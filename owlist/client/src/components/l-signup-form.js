@@ -61,12 +61,12 @@ class SignupForm extends React.Component {
 		      </div>
 		      <div className="form-group">
 			      <label className="mt-3">Email Address</label>
-			      <input type="text" name="email" className="form-control" value={this.state.email}
+			      <input type="email" name="email" className="form-control" value={this.state.email}
 			      onChange={this.handleChange}  placeholder="Enter email" />
 		      </div>
 		      <div className="form-group">
 			      <label >Password</label>
-			      <input type="text" name="password" className="form-control" value={this.state.password}
+			      <input type="password" name="password" className="form-control" value={this.state.password}
 				  onChange={this.handleChange}  placeholder="Password" />
 		      </div>
 				  <input type="submit" value="Submit" className="btn btn-primary full-width" />
