@@ -13,7 +13,7 @@ class NewProjectForm extends React.Component {
 
 	handleChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.value;
     const name = target.name;
 
     this.setState({
@@ -23,7 +23,18 @@ class NewProjectForm extends React.Component {
   	}
 
 	handleSubmit(event) {
-	{/*Need to setup POST to db here*/}
+	{/*Need to setup POST to db here
+	axios.post('/user', {
+    projectName: 'this.state.projectName',
+    projectDesc: 'this.state.projectDesc',
+  	})
+  	.then(function (response) {
+    console.log(response);
+  	})
+  	.catch(function (error) {
+    console.log(error);
+  	});
+	*/}
 
 	 alert('Project Name: ' + this.state.projectName + ' | Project Description: ' + this.state.projectDesc);
      event.preventDefault();

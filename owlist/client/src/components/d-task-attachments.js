@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 class TaskAttachments extends Component {
 
-	
 	render(){
 	return(
 		<div>

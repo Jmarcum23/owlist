@@ -24,7 +24,19 @@ class AddTaskForm extends React.Component {
   	}
 
 	handleSubmit(event) {
-	{/*Need to setup POST to db here*/}
+	{/*Need to setup POST to db here
+	axios.post('/user', {
+    taskName: 'this.state.taskName',
+    taskDesc: 'this.state.taskDesc',
+    taskDate: 'this.state.taskDate',
+  	})
+  	.then(function (response) {
+    console.log(response);
+  	})
+  	.catch(function (error) {
+    console.log(error);
+  	});
+	*/}
 
 	 alert('Task Name: ' + this.state.taskName + ' | Task Description: ' + this.state.taskDesc + ' | Task Date: ' + this.state.taskDate);
      event.preventDefault();
