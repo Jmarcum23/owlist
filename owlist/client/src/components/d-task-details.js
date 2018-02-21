@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import CalendarIcon from 'react-icons/lib/fa/calendar';
 import PaperclipIcon from 'react-icons/lib/fa/paperclip';
+import ProjectName from './d-project-name';
+import TaskDesc from './d-task-desc';
+import TaskAttachments from './d-task-attachments';
+import Comments from './d-comments';
 
 
 class TaskDetails extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {ProjectName: 'Default'}
-	}
+
 	render(){
 	return(
 		<div id="task-pane">
@@ -30,20 +31,14 @@ class TaskDetails extends Component {
 		</div>
 		<div className="task-details-content p-3">
 
-			{/*Break out below into component */}
-			<h3 className="dk-blue-header">{this.state.ProjectName}</h3>
+			<ProjectName />
 			
-			{/*Break out below into component */}
-			<p>Task description here</p>
-			<hr />
+			<TaskDesc />
 
-			{/*Break out below into component */}
-			<p>Task attachments here</p>
-			<hr />
+			<TaskAttachments />
 
-			{/*Break out below into component */}
 			<ul>
-				<li>show comments that have been made here</li>
+				<Comments />
 			</ul>
 
 
