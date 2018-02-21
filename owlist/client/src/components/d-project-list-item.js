@@ -17,6 +17,7 @@ class ProjectListItem extends Component {
 		let projects = this.state.projects
 		return (
 			<div>
+				{/*Need to setup a tag to link to project clicked*/}
 				{projects.map(project => <li key={project.toString()}><a href="">{project}</a></li>)}
 			</div>
 		)

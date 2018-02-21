@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class TaskListItem extends Component {
 	constructor(props){
 		super();
-		this.state = {items: [1,2]}
+		this.state = {items: []}
 	}
 	componentWillMount(){
 		{/*Add connection to db here to pull in task items
@@ -22,8 +22,6 @@ class TaskListItem extends Component {
 		)
 	}
 }
-
-
 
 
 export default TaskListItem;

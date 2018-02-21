@@ -12,15 +12,13 @@ class TaskList extends Component {
 
   showTasks =
     	() => {
-      	if (this.state.items.length <= 0) {
+      	if (this.state.items === 'undefined' || this.state.items.length === 0) {
         return <div>
-        {/*If no items in task list show this:*/}
 		    <h3 className="grey-header section-header pt-5">Go ahead, add a task. It will be a hoot!</h3>
 		    <img className="d-block mr-auto ml-auto mt-5 p-2 img-fluid" src={NoTaskImg} alt='blah' width={470}/>
         </div>
       }else {
       	return <div>
-        {/*else show this:*/}
       	<ul id="task-list">
 			     <TaskListItem />
 		    </ul>
@@ -29,9 +27,10 @@ class TaskList extends Component {
   };
 
   render() {
-
+  console.log(this.state.items)
 	return(
 		<div>
+
 		<div id="add-task">
 			<button type="button" className="btn btn-primary m-3" data-toggle="modal" data-target="#add-task-modal">Add Task</button>
 		</div>
