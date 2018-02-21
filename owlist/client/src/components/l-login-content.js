@@ -11,7 +11,7 @@ const LoginContent = (props) => {
   			<div id="login" className="col-sm-8 col-md-6 col-lg-6 offset-sm-2 offset-md-3 offset-lg-3">
   				<div id="login-logo" className="d-block mr-auto ml-auto mb-5">
   				</div>
-  				<button type="submit" className="btn btn-primary d-block mr-auto ml-auto"><GoogleIcon size={18}/> Use Google Account</button>
+  				<button type="submit" className="btn btn-primary d-block mr-auto ml-auto"><GoogleIcon width={15} height={15} viewBox={"0 3 43 43"}/> Use Google Account</button>
   				<div id="dialog-separator" className="mt-4 mb-4">
   					or
   				</div>
