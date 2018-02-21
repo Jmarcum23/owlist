@@ -17,7 +17,7 @@ class ProjectListItem extends Component {
 		let projects = this.state.projects
 		return (
 			<div>
-				{projects.map(project => <li key={project.toString()}>{project}</li>)}
+				{projects.map(project => <li key={project.toString()}><a href="">{project}</a></li>)}
 			</div>
 		)
 	}
