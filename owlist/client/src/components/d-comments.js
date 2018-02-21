@@ -17,7 +17,7 @@ class Comments extends Component {
 	let comments = this.state.comments
 	return(
 		<div>
-			{comments.map(comment => <li key={comment.toString()}><a href="">{comment}</a></li>)}
+			{comments.map(comment => <li key={comment.toString()}>{comment}</li>)}
 		</div>
 	);
 };
