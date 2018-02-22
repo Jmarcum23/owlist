@@ -8,7 +8,7 @@ const Content = (props) => {
 	return(
 		<section>
 		<div className="container">
-			<div className="row mt-5 mb-5">
+			<div className="row mt-5 mb-5 track-projects">
 				<div className="col-sm-12 col-md-7 col-lg-7 mt-5 mb-5">
 					<img className="img-fluid mt-3" src={UiImg} alt='Ui Img'/>
 				</div>
