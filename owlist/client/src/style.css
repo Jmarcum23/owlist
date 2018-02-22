@@ -26,17 +26,6 @@ body, html {
     background: #e6e7e8
 }
 
-#index-header {
-	background: #14c3f4;
-    background: webkit-linear-gradient(legacy-direction(270deg),#14c3f4, #605ca9);
-    background: -o-linear-gradient(#14c3f4, #605ca9); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#14c3f4, #605ca9); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(270deg,#14c3f4, #605ca9);
-	height: 700px;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-}
-
 /*----------- SITE WIDE STYLES ---------------*/
 
 a {
@@ -64,6 +53,9 @@ h1, h2, h3, h4, h5 {
 }
 .grey-header {
 	color: #bcbec0;
+}
+.purple-header {
+	color: #605ca9;
 }
 
 .section-header {
@@ -402,27 +394,79 @@ p#signup a {
 
 /*----------- INDEX NAV --------------*/
 
+#index-header {
+	background: #14c3f4;
+    background: webkit-linear-gradient(legacy-direction(270deg),#14c3f4, #605ca9);
+    background: -o-linear-gradient(#14c3f4, #605ca9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#14c3f4, #605ca9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(270deg,#14c3f4, #605ca9);
+	height: 800px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+
 .nav-white {
 	background: #fff;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
 }
 
+.navbar-brand-2 {
+	background: url(./images/home-nav-logo.png);
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 35px;
+}
+
 header {
-	padding-top: 60px;
+	padding-top: 70px;
 }
 
 header h1 {
-	font-size: 5.5rem;
+	font-size: 6rem;
 	color: #fff;
 	font-weight: normal;
+	padding-top: 8.5rem;
+	line-height: 7rem;
 }
 
+.top-level-home {
+	font-weight: normal;
+	font-size: 3rem;
+	color: #605ca9;
+}
 
+.second-level-home {
+	font-weight: normal;
+	line-height: 2rem;
+}
+
+.top-level-home.white, .second-level-home.white {
+	color: #fff;
+}
+
+.top-level-home.white {
+	font-size: 5rem;
+	padding-top: 10rem;
+}
+
+#home-computer {
+    background: #14c3f4;
+    background: webkit-linear-gradient(legacy-direction(270deg),#14c3f4, #605ca9);
+    background: -o-linear-gradient(#14c3f4, #605ca9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#14c3f4, #605ca9); /* For Firefox 3.6 to 15 */
+    background: url(./images/owlist-computer.png) no-repeat center right, linear-gradient(270deg,#14c3f4, #605ca9);
+	height: 750px;
+}
+
+.computer {
+	float: right;
+	padding-top: 5.5rem;
+}
 /*---------------- INDEX FOOTER ---------------------*/
 
 footer {
 	background: #141b26;
-	height: 300px;
+	height: 70px;
 }
 
 
@@ -435,6 +479,11 @@ footer {
     /* Retina-specific stuff here */
 	.navbar-brand {
 	background: url(./images/owlist-logo@2x.png);
+	background-size: 100%;
+    background-repeat: no-repeat;
+	}
+	.navbar-brand-2 {
+	background: url(./images/home-nav-logo@2x.png);
 	background-size: 100%;
     background-repeat: no-repeat;
 	}

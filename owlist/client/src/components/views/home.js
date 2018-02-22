@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavBar from '../h-navbar';
 import Header from '../h-header';
+import Content from '../h-content';
+
 
 class Home extends Component {
 render() {
@@ -8,6 +10,7 @@ render() {
       <div className="Home">
         <NavBar />
         <Header />
+        <Content />
       </div>
     );
   }

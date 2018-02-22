@@ -14,8 +14,7 @@ ReactDOM.render(
 	<BrowserRouter>
 	<div>
 
-		<App url='http://localhost:3000/projectnames'
-       pollInterval={2000}/>
+		<App/>
 
 		{/*Add Task Modal*/}
 		<div className="modal fade" id="add-task-modal" role="dialog" aria-labelledby="addTaskModal" aria-hidden="true">
